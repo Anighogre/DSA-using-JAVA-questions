@@ -22,3 +22,58 @@ public class Main {
         System.out.println(median);
     }
 }
+
+
+// Q2. 7 ways to print elements in array in java
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Main {
+    public static void main(String[] args) {
+        String[] arr = {"One", "Two", "Three", "Four"};
+
+        // Method 1 : This is the first way you can print elements in array withh the use of asList
+
+        System.out.println("methodd 1");
+        Arrays.asList(arr).forEach(element-> System.out.println(element));
+
+        // Method 2 : In this method we use arrays.stream
+
+        System.out.println("method 2");
+        Arrays.stream(arr).forEach(System.out::println);
+
+        // Method 3 : in this method use stream.of
+
+        System.out.println("method 3");
+        Stream.of(arr).forEach(Element-> System.out.println(Element));
+
+        // Method 4 : use traditional for loop
+
+        System.out.println("method 4");
+        for(int i = 0; i<arr.length; i++){
+            System.out.println(arr[i]);
+        }
+
+        // Method 5 : Enhanced for loop
+
+        System.out.println("method 5");
+        for(String element : arr) {
+            System.out.println(element);
+        }
+
+        // Method 6 : Arrays. toString method
+
+        System.out.println("method 6");
+        System.out.println(Arrays.toString(arr));
+
+        // Method 7 : collectors.joining method
+
+        System.out.println("method 7");
+        String result = Arrays.stream(arr).collect(Collectors.joining(", "));
+        System.out.println(result);
+    }
+}
+
+
