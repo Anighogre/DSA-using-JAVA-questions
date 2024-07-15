@@ -87,3 +87,28 @@ public class Main {
         IntStream.range(0, array.length).filter(i->i%2==0).map(i->array[i]).forEach(System.out::println);
     }
 }
+
+
+// Q3. Check a given numbe ris palindrome or not 
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n = sc.nextInt();
+        int s =0, c, r;
+        c=n;
+
+        while (n>0) {
+           r = n%10;
+           s = (s*10) + r;
+           n = n/10;
+        }
+        if(c == s) 
+            System.out.println("palindrome");
+        else
+            System.out.println("not palindrome");
+    }
+}
