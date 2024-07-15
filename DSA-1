@@ -89,7 +89,7 @@ public class Main {
 }
 
 
-// Q3. Check a given numbe ris palindrome or not 
+// Q4. Check a given numbe ris palindrome or not 
 
 import java.util.*;
 
