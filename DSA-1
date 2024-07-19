@@ -193,3 +193,33 @@ public class Main {
         System.out.println(result);
     }
 }
+
+
+// Q8. write a java program to print fuplicate characters with number of occurances in java
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        String str = "java programs";
+        Map<Character, Integer> dupCharMap = new HashMap<> ();
+
+        char [] charArr = str.toCharArray();
+
+        for(char keys : charArr) {
+            if(Character.isAlphabetic(keys)) {
+                if(dupCharMap.containsKey(keys)) {
+                    dupCharMap.put(keys, dupCharMap.get(keys) + 1);
+                }else {
+                    dupCharMap.put(keys, 1);
+                }
+            }
+        }
+        dupCharMap.entrySet().removeIf(i -> i.getValue()==1);
+        System.out.println(dupCharMap);
+
+    }
+    
+}
