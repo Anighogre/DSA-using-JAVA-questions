@@ -244,3 +244,17 @@ public class SwapNum {
         System.out.println("After swap the number 2 :" + num2);
     }
 }
+
+// Q10. Write a java program to find area and circumference of circle 
+
+public class Main {
+    public static void main(String[] args) {
+        double r = 7;
+
+        double area = Math.PI * (r*r);
+        System.out.println("the area of circle is :" + area);
+
+        double circum = 2 * Math.PI * r;
+        System.out.println("the circumference of circle is :" + circum);
+    }
+}
