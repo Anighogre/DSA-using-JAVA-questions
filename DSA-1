@@ -258,3 +258,22 @@ public class Main {
         System.out.println("the circumference of circle is :" + circum);
     }
 }
+
+// Q11. write a java program to find the area of rectangle
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the lengh of rectangle: ");
+        int length = sc.nextInt();
+
+        System.out.println("Enter the breadth of rectangle: ");
+        int breadth = sc.nextInt();
+
+        int area = length * breadth;
+        System.out.println("Area of rectangle is :" + area);
+    }
+}
