@@ -302,3 +302,25 @@ public class Main {
         System.out.println("After swapping elements =" + list);
     }
 }
+
+
+// Q13. How to reverse the order of element in ArrayList in java
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+
+        System.out.println("Before reverse the elements =" + list);
+        Collections.reverse(list);
+        System.out.println("After reverse the elements =" + list);
+    }
+}
+
