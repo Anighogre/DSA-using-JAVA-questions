@@ -324,3 +324,15 @@ public class Main {
     }
 }
 
+
+// Q14. Write a java program to print alphabets (a to z)
+
+
+class printAlphabets {
+    public static void main(String[] args) {
+        
+        for(char ch = 'a'; ch <= 'z'; ch++) {
+            System.out.println(ch);
+        }
+    }
+}
